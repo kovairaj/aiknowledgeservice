@@ -1,0 +1,48 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "environmentName": {
+      "value": "${WORKSPACE}"
+    },
+    "location": {
+      "value": "${LOCATION}"
+    },
+    "principalId": {
+      "value": "${SINGED_IN_USER_PRINCIPAL}"
+    },
+    "randomString": {
+      "value": "${RANDOM_STRING}"
+    },
+    "azureOpenAIServiceName": {
+      "value": "${AZURE_OPENAI_SERVICE_NAME}"
+    },
+    "azureOpenAIServiceKey": {
+      "value": "${AZURE_OPENAI_SERVICE_KEY}"
+    },
+    "openAiSkuName": {
+      "value": "S0"
+    },
+    "chatGptDeploymentName": {
+      "value": "${CHATGPT_MODEL_DEPLOYMENT_NAME}"
+    },
+    "useExistingAOAIService": {
+      "value": ${USE_EXISTING_AOAI}
+    },
+    "searchServicesSkuName": {
+      "value": "standard"
+    },
+    "buildNumber": {
+      "value": "${BUILD_NUMBER}"
+    },
+    "aadClientId": {
+      "value": "${AZURE_AD_APP_CLIENT_ID}"
+    },
+    "isInAutomation": {
+      "value": ${IS_IN_AUTOMATION}
+    },
+    "queryTermLanguage": {
+      "value": "${QUERYTERM_LANGUAGE}"
+    }
+  }
+}
